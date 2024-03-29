@@ -1,29 +1,56 @@
 {
   "name": "shell",
-  "version": "0.0.1",
-  "description": "App Shell",
-  "homepage": "https://github.com/tavukcobani/monolerna#readme",
-  "license": "ISC",
-  "main": "src/index.js",
-  "directories": {
-    "src": "src",
-    "test": "__tests__"
-  },
-  "files": [
-    "src"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tavukcobani/monolerna.git"
-  },
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "test": "node ./__tests__/shell.test.js"
+    "start": "webpack --watch --config configs/webpack.dev.js",
+    "build": "webpack --progress --config configs/webpack.prod.js",
+    "serve": "webpack serve --config configs/webpack.dev.js",
+    "dev": "npm-run-all --parallel start serve",
+    "tscheck": "tsc"
   },
-  "bugs": {
-    "url": "https://github.com/tavukcobani/monolerna/issues"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@module-federation/typescript": "^3.1.1",
+    "babel-loader": "^9.1.3",
+    "html-webpack-plugin": "^5.6.0",
+    "npm-run-all": "^4.1.5",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.10.0"
   },
   "dependencies": {
     "remote1": "file:../remote1",
-    "remote2": "file:../remote2"
+    "remote2": "file:../remote2",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.2",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18.2.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "web-vitals": "^3.5.2"
   }
 }
