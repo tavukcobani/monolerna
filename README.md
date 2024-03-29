@@ -1,0 +1,2 @@
+# monolerna
+monorepo + lerna
