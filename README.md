@@ -1,2 +1,2 @@
 # monolerna
-monorepo + lerna
+monorepo > lerna
