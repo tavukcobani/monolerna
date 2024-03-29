@@ -1,0 +1,25 @@
+{
+  "name": "remote2",
+  "version": "0.0.1",
+  "description": "remote 2",
+  "homepage": "https://github.com/tavukcobani/monolerna#readme",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tavukcobani/monolerna.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/remote2.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/tavukcobani/monolerna/issues"
+  }
+}

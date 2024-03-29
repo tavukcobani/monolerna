@@ -1,0 +1,29 @@
+{
+  "name": "shell",
+  "version": "0.0.1",
+  "description": "App Shell",
+  "homepage": "https://github.com/tavukcobani/monolerna#readme",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tavukcobani/monolerna.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/shell.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/tavukcobani/monolerna/issues"
+  },
+  "dependencies": {
+    "remote1": "file:../remote1",
+    "remote2": "file:../remote2"
+  }
+}
