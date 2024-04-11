@@ -3,9 +3,7 @@ const dependencies = require("../package.json").dependencies;
 module.exports = {
   name: "host",
   filename: "remoteEntry.js",
-  remotes: {
-    
-  },
+  remotes: {},
   shared: {
     ...dependencies,
     react: {
