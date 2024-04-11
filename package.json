@@ -5,19 +5,19 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@babel/polyfill": "^7.12.1",
     "@swc/cli": "0.3.10",
     "@swc/core": "1.4.11",
     "@swc/helpers": "0.5.8",
-    "lerna": "8.1.2",
-    "react-helmet": "^6.1.0",
-    "rimraf": "^5.0.5"
+    "lerna": "8.1.2"
   },
   "scripts": {
+    "serve": "npx lerna run start",
     "start": "npx lerna run dev",
     "clean": "npx lerna clean",
     "build": "npx lerna run build",
     "test": "npx lerna run test",
     "publish": "npx lerna publish"
+  },
+  "dependencies": {
   }
 }
